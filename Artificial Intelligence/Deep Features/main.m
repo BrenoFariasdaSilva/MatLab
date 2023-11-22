@@ -1,3 +1,4 @@
+clc;
 % começaremos testando redes shallower features
 
 % Arquiteturas:
@@ -48,4 +49,4 @@ labelsNumeric = double(labels) ;
 deepFeatures(imds, net, layer, labelsNumeric, nameFile) ;
 
 % Adicione a mensagem ao final da execução
-disp('As features foram extraidas com sucesso!');
+disp(['O código foi executado com sucesso para o arquivo ' nameFile ' usando o modelo ' class(net)]);
