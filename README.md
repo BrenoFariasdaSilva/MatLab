@@ -1,6 +1,6 @@
 <div align="center">
   
-# [MatLab.](https://github.com/BrenoFariasdaSilva/MatLab) <img src="[Icon-Image-URL](https://github.com/BrenoFariasdaSilva/MatLab/blob/main/.assets/matlab.svg)"  width="3%" height="3%">
+# [MatLab.](https://github.com/BrenoFariasdaSilva/MatLab) <img src="https://github.com/BrenoFariasdaSilva/MatLab/blob/main/.assets/matlab.svg"  width="3%" height="3%">
 
 </div>
 
