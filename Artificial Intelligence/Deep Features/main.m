@@ -46,3 +46,6 @@ labels = imds.Labels ;
 labelsNumeric = double(labels) ;
 
 deepFeatures(imds, net, layer, labelsNumeric, nameFile) ;
+
+% Adicione a mensagem ao final da execução
+disp('As features foram extraidas com sucesso!');
