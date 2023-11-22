@@ -1,7 +1,8 @@
 % começaremos testando redes shallower features
 
 % Arquiteturas:
-% https://www.mathworks.com/help/deeplearning/ug/extract-image-features-using-pretrained-network.html
+% About: https://www.mathworks.com/help/deeplearning/ug/extract-image-features-using-pretrained-network.html
+% Performance dos Modelos: https://www.mathworks.com/matlabcentral/fileexchange/130119-matlab-deep-learning-model-hub
 % squeezenet
 % googlenet	
 % inceptionv3
@@ -22,14 +23,10 @@
 % vgg16		
 % vgg19
 
-%
-
-net = resnet18 ;
-%net = nasnetlarge ;
-layer = 'pool5' ;
-%layer = 'activation_520' ;
-%layer = 'global_average_pooling2d_2';
-nameFile = 'SEED_features_Segment_ResNet18_1x1_224x224_new_balanceada' ;
+%net = resnet18 ;
+%layer = 'pool5' ; % Camada de saida do ResNet18.
+net = nasnetlarge ;
+layer = 'activation_520' ; % Camada de saida do NASNetLarge.
 % converte para o formato de entrada usado pelo matlab.
 %Base
 %unzip("/MATLAB Drive/PPGCC06/featureExtraction/textureDatabase/Base BFL - 256x256.zip");
@@ -38,7 +35,8 @@ nameFile = 'SEED_features_Segment_ResNet18_1x1_224x224_new_balanceada' ;
 %    IncludeSubfolders=true, ...
 %    LabelSource="foldernames");
 
-imds = imageDatastore("/home/suporte/MATLAB-Drive/segment/InsetosSegmentados/", ...
+nameFile = 'Test' ;
+imds = imageDatastore("/home/brenofarias/Documents/My Files/Backup/GitHub/Private/MatLab/Artificial Intelligence/Deep Features/Dataset/Test/", ...
 IncludeSubfolders=true, ...
 LabelSource="foldernames");
 
@@ -46,6 +44,5 @@ LabelSource="foldernames");
 
 labels = imds.Labels ;
 labelsNumeric = double(labels) ;
-
 
 deepFeatures(imds, net, layer, labelsNumeric, nameFile) ;
