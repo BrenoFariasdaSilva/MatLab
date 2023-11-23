@@ -5,22 +5,22 @@ clc;
 % Performance dos Modelos: https://www.mathworks.com/matlabcentral/fileexchange/130119-matlab-deep-learning-model-hub
 % squeezenet
 % googlenet	
-% inceptionv3 -> last layer: predictions
+% inceptionv3 -> last layer: predictions -> 1000 features
 % densenet201	
 % mobilenetv2
-% resnet18 -> last layer: pool5
+% resnet18 -> last layer: pool5 -> 512 features
 % resnet50	
 % resnet101		
 % xception	
 % inceptionresnetv2	
 % shufflenet	
 % nasnetmobile	
-% nasnetlarge -> last layer: activation_520
+% nasnetlarge -> last layer: activation_520 -> 487.872 features
 % darknet19
 % darknet53	
 % efficientnetb0	
 % alexnet		
-% vgg16 -> last layer: fc8
+% vgg16 -> last layer: fc8 -> 1000 features
 % vgg19
 
 % Carregando o modelo.
