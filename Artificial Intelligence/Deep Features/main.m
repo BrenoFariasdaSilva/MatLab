@@ -1,51 +1,43 @@
 clc;
-% começaremos testando redes shallower features
 
-% Arquiteturas:
+% Exemplos de Arquiteturas:
 % About: https://www.mathworks.com/help/deeplearning/ug/extract-image-features-using-pretrained-network.html
 % Performance dos Modelos: https://www.mathworks.com/matlabcentral/fileexchange/130119-matlab-deep-learning-model-hub
 % squeezenet
 % googlenet	
-% inceptionv3
+% inceptionv3 -> last layer: predictions
 % densenet201	
 % mobilenetv2
-% resnet18	
+% resnet18 -> last layer: pool5
 % resnet50	
 % resnet101		
 % xception	
 % inceptionresnetv2	
 % shufflenet	
 % nasnetmobile	
-% nasnetlarge	
+% nasnetlarge -> last layer: activation_520
 % darknet19
 % darknet53	
 % efficientnetb0	
 % alexnet		
-% vgg16		
+% vgg16 -> last layer: fc8
 % vgg19
 
-%net = resnet18 ;
-%layer = 'pool5' ; % Camada de saida do ResNet18.
-net = nasnetlarge ;
+% Carregando o modelo.
+net = inceptionv3 ;
 layer = 'activation_520' ; % Camada de saida do NASNetLarge.
-% converte para o formato de entrada usado pelo matlab.
-%Base
-%unzip("/MATLAB Drive/PPGCC06/featureExtraction/textureDatabase/Base BFL - 256x256.zip");
 
-%imds = imageDatastore("/home/suporte/MATLAB-Drive/PPGCC06/featureExtraction/textureDescriptors/descriptorsMatlab/Base BFL - 256x256", ...
-%    IncludeSubfolders=true, ...
-%    LabelSource="foldernames");
-
+% Caminho para o dataset de treino.
 nameFile = 'Test' ;
 imds = imageDatastore("/home/brenofarias/Documents/My Files/Backup/GitHub/Private/MatLab/Artificial Intelligence/Deep Features/Dataset/Test/", ...
 IncludeSubfolders=true, ...
 LabelSource="foldernames");
 
 % Arquitetura.
-
 labels = imds.Labels ;
 labelsNumeric = double(labels) ;
 
+% Extração de Features.
 deepFeatures(imds, net, layer, labelsNumeric, nameFile) ;
 
 % Adicione a mensagem ao final da execução
