@@ -22,6 +22,7 @@ clc;
 % alexnet		
 % vgg16 -> last layer: fc8 -> 1000 features
 % vgg19
+% In order to analyze the network, on the console, type: analyzeNetwork(networkNameHere)
 
 % Carregando o modelo.
 net = inceptionv3 ;
