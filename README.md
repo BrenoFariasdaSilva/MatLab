@@ -61,6 +61,10 @@ MatLab is a powerful numerical computing environment widely used in academia and
 
 ## Requirements
 
+Before getting started with the MatLab repository, ensure that you have the following requirements in place:
+
+- **MatLab Installation:** MatLab is the core platform for running the MatLab files in this repository. If you don't have MatLab installed, follow the installation instructions provided below.
+
 ### Install MatLab
 
 1. Download Matlab from [Here](https://matlab.mathworks.com/) and download it.
