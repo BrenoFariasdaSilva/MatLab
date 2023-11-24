@@ -47,7 +47,8 @@ My MatLab Drive Files.
 
 ## Introduction
 
-Welcome to the MatLab repository, a comprehensive collection of MatLab files showcasing various projects, including implementations in Artificial Intelligence, Calculus, and more. Whether you're a student, researcher, or enthusiast, this repository serves as a little hub for MatLab code, providing a diverse set of tools and solutions across different domains.
+Welcome to the MatLab repository, a comprehensive collection of MatLab files showcasing various projects, including implementations in Artificial Intelligence, Calculus, and more. Whether you're a student, researcher, or enthusiast, this repository serves as a little hub for MatLab code, providing a diverse set of tools and solutions across different domains.  
+Also, be aware that you must have a minimum understanding of MatLab to run the files in this repository. If you're new to MatLab, consider checking out the [MatLab documentation](https://www.mathworks.com/help/matlab/) to get started.
 
 ### Key Features
 
