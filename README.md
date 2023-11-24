@@ -16,6 +16,9 @@ My MatLab Drive Files.
 
 <div align="center">
 
+![GitHub Code Size in Bytes](https://img.shields.io/github/languages/code-size/BrenoFariasdaSilva/MatLab)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/BrenoFariasdaSilva/MatLab)
+![GitHub](https://img.shields.io/github/license/BrenoFariasdaSilva/MatLab)
 ![wakatime](https://wakatime.com/badge/github/BrenoFariasdaSilva/MatLab.svg)
 
 </div>
