@@ -48,7 +48,9 @@ My MatLab Drive Files.
 Detailed project description.
 
 ## Requirements
+
 ### Install MatLab
+
 1. Download Matlab from [Here](https://matlab.mathworks.com/) and download it.
 2. Then, run the following commands:
 
@@ -75,6 +77,7 @@ sudo apt install matlab-support -y
 ## Setup
 
 ### Clone the repository
+
 1. Clone the repository with the following command:
 
 ```bash
@@ -83,9 +86,11 @@ cd MatLab
 ```
 
 ## Contributing
+
 Code improvement recommendations are very welcome. In order to contribute, follow the steps below:
 
 ## License
 
 ### Creative Commons Zero v1.0 Universal
+
 This project is licensed under the [Creative Commons Zero v1.0 Universal](LICENSE), which means you are free to use, modify, and distribute the code. See the [LICENSE](LICENSE) file for more details.
