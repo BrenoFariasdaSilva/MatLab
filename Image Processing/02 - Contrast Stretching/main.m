@@ -1,5 +1,5 @@
 % 1. Carregue a imagem de entrada.
-input_image = imread("/Users/brenofarias/Documents/My Files/Backup/GitHub/Public/MatLab/Image Processing/02 - Contrast Stretching/Dataset/pollen.jpg");
+input_image = imread("Dataset/pollen.jpg");
 
 % 2. Crie uma matriz de zeros com a mesma dimensão da imagem de entrada do tipo uint8 para armazenar a imagem de saída.
 result = zeros(size(input_image), "uint8");
@@ -65,4 +65,4 @@ for i = 1:size(input_image, 1)
 end
 
 % 6. Salve a imagem de saída em disco.
-imwrite(result, "/Users/brenofarias/Documents/My Files/Backup/GitHub/Public/MatLab/Image Processing/02 - Contrast Stretching/Dataset/constrast_enhanced_pollen.jpg");
+imwrite(result, "Dataset/constrast_enhanced_pollen.jpg");
