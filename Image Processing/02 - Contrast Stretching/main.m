@@ -64,5 +64,5 @@ for i = 1:size(input_image, 1)
 	end
 end
 
-% 6. Salve a imagem de saída em disco.
+% 7. Salve a imagem de saída em disco.
 imwrite(result, "Dataset/constrast_enhanced_pollen.jpg");
