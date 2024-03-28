@@ -6,10 +6,10 @@ result = zeros(size(input_image), "uint8");
 
 % 3. Defina as posições dos pontos (r1, s1) e (r2, s2).
 L = 255; % Número de níveis de cinza
-r1 = L/3; % Ponto x final do segmento 1 e ponto x inicial do segmento 2
-s1 = L/8; % Ponto y final do segmento 1 e ponto y inicial do segmento 2
-r2 = (10*L)/12; % Ponto x final do segmento 2 e ponto x inicial do segmento 3
-s2 = (14*L)/16; % Ponto y final do segmento 2 e ponto y inicial do segmento 3
+r1 = 100; % Ponto x final do segmento 1 e ponto x inicial do segmento 2
+s1 = 30; % Ponto y final do segmento 1 e ponto y inicial do segmento 2
+r2 = 125; % Ponto x final do segmento 2 e ponto x inicial do segmento 3
+s2 = 160; % Ponto y final do segmento 2 e ponto y inicial do segmento 3
 
 % Inicializa a transformação de intensidade
 T = zeros(1, L+1); % Vetor de 0 a 255
